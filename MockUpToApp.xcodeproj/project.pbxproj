@@ -30,6 +30,7 @@
 		3EA34A382532429700CADD9F /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA34A372532429700CADD9F /* TitleLabel.swift */; };
 		3EA34A3B2532450500CADD9F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EA34A3A2532450500CADD9F /* Media.xcassets */; };
 		3EA34A3E2532451900CADD9F /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EA34A3D2532451900CADD9F /* Color.xcassets */; };
+		3EA34A4225331B4F00CADD9F /* ProtocolCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA34A4125331B4F00CADD9F /* ProtocolCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		3EA34A372532429700CADD9F /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
 		3EA34A3A2532450500CADD9F /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		3EA34A3D2532451900CADD9F /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		3EA34A4125331B4F00CADD9F /* ProtocolCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +241,7 @@
 		3EA349F825322B4600CADD9F /* AppCoordinators */ = {
 			isa = PBXGroup;
 			children = (
+				3EA34A4125331B4F00CADD9F /* ProtocolCoordinator.swift */,
 				3EA349F925322C3A00CADD9F /* AppCoordinator.swift */,
 			);
 			path = AppCoordinators;
@@ -397,6 +400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EA34A0625322FB900CADD9F /* APIManager.swift in Sources */,
+				3EA34A4225331B4F00CADD9F /* ProtocolCoordinator.swift in Sources */,
 				3EA349FA25322C3A00CADD9F /* AppCoordinator.swift in Sources */,
 				3EA34A0D2532315700CADD9F /* GetSomethingRequest.swift in Sources */,
 				3EA34A2A253235AC00CADD9F /* extensionUIImageView.swift in Sources */,

@@ -127,9 +127,9 @@
 	1. Add every font into file
 	2. Add every font into plist as Font provided by application
 	3. Create Class for font to make variables UIFONT as in file Helpers->AppFonts->AppFonts
-	
-	
-	
+## Add Localization
+	1. Add in Google Drive excel file to every language key->translate
+	2. Dont forget add extention to String about localization like in this file
 ###  At last you need commit in your git
 
 
