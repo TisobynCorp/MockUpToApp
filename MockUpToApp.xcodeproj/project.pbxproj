@@ -23,10 +23,10 @@
 		3EA34A19253234F800CADD9F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3EA34A18253234F800CADD9F /* Alamofire */; };
 		3EA34A1D2532352200CADD9F /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 3EA34A1C2532352200CADD9F /* SwiftyJSON */; };
 		3EA34A212532353700CADD9F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3EA34A202532353700CADD9F /* SnapKit */; };
-		3EA34A262532359500CADD9F /* extensionString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA34A252532359500CADD9F /* extensionString.swift */; };
-		3EA34A2A253235AC00CADD9F /* extensionUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA34A29253235AC00CADD9F /* extensionUIImageView.swift */; };
+		3EA34A262532359500CADD9F /* String+func in Sources */ = {isa = PBXBuildFile; fileRef = 3EA34A252532359500CADD9F /* String+func */; };
+		3EA34A2A253235AC00CADD9F /* UIImageView+func.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA34A29253235AC00CADD9F /* UIImageView+func.swift */; };
 		3EA34A2E2532368200CADD9F /* FailureError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA34A2D2532368200CADD9F /* FailureError.swift */; };
-		3EA34A3525323FD200CADD9F /* extensionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA34A3425323FD200CADD9F /* extensionUIView.swift */; };
+		3EA34A3525323FD200CADD9F /* UIView+shortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA34A3425323FD200CADD9F /* UIView+shortcuts.swift */; };
 		3EA34A382532429700CADD9F /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA34A372532429700CADD9F /* TitleLabel.swift */; };
 		3EA34A3B2532450500CADD9F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EA34A3A2532450500CADD9F /* Media.xcassets */; };
 		3EA34A3E2532451900CADD9F /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EA34A3D2532451900CADD9F /* Color.xcassets */; };
@@ -50,10 +50,10 @@
 		3EA34A0C2532315700CADD9F /* GetSomethingRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSomethingRequest.swift; sourceTree = "<group>"; };
 		3EA34A102532317A00CADD9F /* PostSomethingRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSomethingRequest.swift; sourceTree = "<group>"; };
 		3EA34A132532319200CADD9F /* PutSomethingRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutSomethingRequest.swift; sourceTree = "<group>"; };
-		3EA34A252532359500CADD9F /* extensionString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionString.swift; sourceTree = "<group>"; };
-		3EA34A29253235AC00CADD9F /* extensionUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionUIImageView.swift; sourceTree = "<group>"; };
+		3EA34A252532359500CADD9F /* String+func */ = {isa = PBXFileReference; lastKnownFileType = text; path = "String+func"; sourceTree = "<group>"; };
+		3EA34A29253235AC00CADD9F /* UIImageView+func.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+func.swift"; sourceTree = "<group>"; };
 		3EA34A2D2532368200CADD9F /* FailureError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailureError.swift; sourceTree = "<group>"; };
-		3EA34A3425323FD200CADD9F /* extensionUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionUIView.swift; sourceTree = "<group>"; };
+		3EA34A3425323FD200CADD9F /* UIView+shortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+shortcuts.swift"; sourceTree = "<group>"; };
 		3EA34A372532429700CADD9F /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
 		3EA34A3A2532450500CADD9F /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		3EA34A3D2532451900CADD9F /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
@@ -274,9 +274,9 @@
 		3EA34A242532356C00CADD9F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				3EA34A252532359500CADD9F /* extensionString.swift */,
-				3EA34A29253235AC00CADD9F /* extensionUIImageView.swift */,
-				3EA34A3425323FD200CADD9F /* extensionUIView.swift */,
+				3EA34A252532359500CADD9F /* String+func */,
+				3EA34A29253235AC00CADD9F /* UIImageView+func.swift */,
+				3EA34A3425323FD200CADD9F /* UIView+shortcuts.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -403,16 +403,16 @@
 				3EA34A4225331B4F00CADD9F /* ProtocolCoordinator.swift in Sources */,
 				3EA349FA25322C3A00CADD9F /* AppCoordinator.swift in Sources */,
 				3EA34A0D2532315700CADD9F /* GetSomethingRequest.swift in Sources */,
-				3EA34A2A253235AC00CADD9F /* extensionUIImageView.swift in Sources */,
+				3EA34A2A253235AC00CADD9F /* UIImageView+func.swift in Sources */,
 				3EA349D02532280D00CADD9F /* ViewController.swift in Sources */,
 				3EA349F22532296100CADD9F /* AppFonts.swift in Sources */,
 				3EA349EE2532295700CADD9F /* AppColors.swift in Sources */,
 				3EA349CC2532280D00CADD9F /* AppDelegate.swift in Sources */,
 				3EA34A112532317A00CADD9F /* PostSomethingRequest.swift in Sources */,
-				3EA34A262532359500CADD9F /* extensionString.swift in Sources */,
+				3EA34A262532359500CADD9F /* String+func in Sources */,
 				3EA34A0125322F8400CADD9F /* Endpoint.swift in Sources */,
 				3EA34A142532319200CADD9F /* PutSomethingRequest.swift in Sources */,
-				3EA34A3525323FD200CADD9F /* extensionUIView.swift in Sources */,
+				3EA34A3525323FD200CADD9F /* UIView+shortcuts.swift in Sources */,
 				3EA34A382532429700CADD9F /* TitleLabel.swift in Sources */,
 				3EA349CE2532280D00CADD9F /* SceneDelegate.swift in Sources */,
 				3EA34A2E2532368200CADD9F /* FailureError.swift in Sources */,
